@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <title>RedStore | Ecommerce</title>
     <link rel="stylesheet" href="style.css">
     <link href = " https://fonts.googleapis.com/css2?family = Poppins : wght @ 300 ; 400 ; 500 ; 600 ; 700 & display - swap" rel="stylesheet">    
@@ -18,7 +19,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
@@ -210,7 +211,22 @@
             <p class="copyright">Copyright 2022 - Flash✨</p>
         </div> 
     </div>
+    <!-- --------js for toggle menu--------- -->
+    <script>
+        var Menuitem = document.getElementById("Menuitem");
 
+        Menuitem.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(Menuitem.style.maxHeight == "0px")
+            {
+                Menuitem.style.maxHeight = "200px";
+            }
+            else{
+                Menuitem.style.maxHeight = "0px";
+            }
+        }
+    </script>  
                   
 
 </body>

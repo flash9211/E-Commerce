@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <title>RedStore | Ecommerce</title>
     <link rel="stylesheet" href="style.css">
     <link href = " https://fonts.googleapis.com/css2?family = Poppins : wght @ 300 ; 400 ; 500 ; 600 ; 700 & display - swap" rel="stylesheet">    
@@ -17,16 +18,16 @@
                     <img src="images/logo.png" width="125px">
                 </div>
                 <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
+                    <ul id="Menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav>
                 <img src="images/cart.png" width="30px" height="30px">
-                <!-- <img src="images/menu.png" class="menu-icon"> -->
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             
             <div class="row">
@@ -68,7 +69,7 @@
                 <img class="fpsc" src="images/product-1.jpg">
                 <h4>Red Printed T-shirt</h4>
                 <div class="rating">
-                    <i class="fa fa-star"></i>
+                    <i class="fa fa-astar"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -313,8 +314,22 @@
             <p class="copyright">Copyright 2022 - Flash✨</p>
         </div> 
     </div>
+<!-- --------js for toggle menu--------- -->
+    <script>
+        var Menuitem = document.getElementById("Menuitem");
 
-                  
+        Menuitem.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(Menuitem.style.maxHeight == "0px")
+            {
+                Menuitem.style.maxHeight = "200px";
+            }
+            else{
+                Menuitem.style.maxHeight = "0px";
+            }
+        }
+    </script>            
 
 </body>
 </html>
